@@ -73,7 +73,7 @@ function Rocket(dna) {
             target.y);
         if(this.crashed){
           console.log("crashed");
-          this.fitness /= 10;
+          this.fitness = 0;
           return;
         }
         this.fitness = (map(d, 0, width, width, 0));
